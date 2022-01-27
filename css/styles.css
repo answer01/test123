@@ -58,7 +58,6 @@
 .test-grid__item::before {
    content: "" counter(list);
    counter-increment: list;
-   color: #fff;
    position: absolute;
    top: 50%;
    left: 50%;
