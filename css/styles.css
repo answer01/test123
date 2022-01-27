@@ -1,0 +1,156 @@
+.body {
+   width: 100%;
+   font-family: "Roboto";
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1170px;
+   background: #C0DBD9;
+   padding: 0px 15px;
+}
+
+.header {
+   background: #7FAFF7;
+   padding: 30px 30.5px;
+}
+
+.button {
+   font-weight: 400;
+   align-items: center;
+   padding: 8px 15px;
+   width: 206px;
+   height: 39px;
+   background: #A5C7F9;
+   border-radius: 5px;
+   border: none;
+   font-size: 20px;
+   line-height: 23px;
+   color: #FFFFFF;
+   cursor: pointer;
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+.button:hover {
+   transition: color 0.3s;
+   background: #8AD191;
+}
+
+.test-grid__items {
+   display: grid;
+   gap: 15px;
+   grid-template-columns: 2.4375fr 3.6875fr 1fr;
+   background: #B3F95A;
+   margin: 15px 0px 15px 0px;
+   list-style: none;
+   counter-reset: list;
+   padding: 0;
+}
+
+.test-grid__item {
+   font-weight: 400;
+   min-height: 198px;
+   background: #8AD191;
+   position: relative;
+   font-size: 53px;
+}
+.test-grid__item::before {
+   content: "" counter(list);
+   counter-increment: list;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) ;
+   font-size: 53px;
+   line-height: 62px;
+   color: #FFFFFF;
+}
+
+.grid-item-4 {
+   grid-column-start: span 2;
+}
+
+.test-flex__items {
+  display: flex;
+  gap: 2.6%;
+  background: #88B5BF;
+  padding: 2.6% 2.8%;
+  margin-bottom: 100px;
+}
+
+.test-flex__item {
+   position: relative;
+   width: 25%;
+   padding-bottom: 19.5%;
+   height: 0;
+}
+
+.test-flex__item--content {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   background: #0D89B0;
+}
+
+.footer {
+   min-height: 100px;
+   background: #7FAFF7;
+}
+
+.popup {
+   max-width: 400px;
+   height: 400px;
+   background: #FFFFFF;
+   margin: 70px auto;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 53px;
+   line-height: 62px;
+}
+
+.overlay {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.7);
+   transition: opacity 500ms;
+   visibility: hidden;
+   opacity: 0;
+}
+
+.overlay:target {
+   visibility: visible;
+   opacity: 1;
+}
+
+.close {
+   font-weight: 400;
+   text-decoration: none;
+   background: #7FAFF6;
+   border-radius: 5px;
+   font-size: 20px;
+   line-height: 23px;
+   color: #ffffff;
+   width: 43px;
+   height: 39px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   transition: background 0.3s;
+}
+
+.close:hover {
+   background:#B3F95A;
+}
